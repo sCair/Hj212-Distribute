@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,35 +28,41 @@
 	</scm>
 	<properties>
 		<java.version>1.8</java.version>
+		<smartboot.socket.version>1.5.52</smartboot.socket.version>
+		<spring-boot.version>2.5.4</spring-boot.version>
+		<log4j.version>1.2.17</log4j.version>
+		<spring-data-redis.version>3.4.1</spring-data-redis.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>io.github.smartboot.socket</groupId>
 			<artifactId>aio-core</artifactId>
-			<version>1.5.52</version>
+			<version>${smartboot.socket.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+			<version>${spring-boot.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>${spring-boot.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${log4j.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-redis</artifactId>
-			<version>3.4.1</version>
+			<version>${spring-data-redis.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -65,6 +71,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version>
 			</plugin>
 		</plugins>
 	</build>
