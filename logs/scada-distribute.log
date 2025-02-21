@@ -3748,3 +3748,73 @@
 [INFO ] 2025-02-21 14:24:36,518(72943) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$1.run(StringClient.java:67): 服务器 9 秒后重新连接  
 [INFO ] 2025-02-21 14:24:47,675(84100) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$1.run(StringClient.java:67): 服务器 8 秒后重新连接  
 [INFO ] 2025-02-21 14:24:58,849(95274) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$1.run(StringClient.java:67): 服务器 7 秒后重新连接  
+[ERROR] 2025-02-21 17:25:06,003(1) --> [main] com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:93): 连接服务器失败  
+java.io.IOException: java.net.ConnectException: Connection refused: connect
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:237)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:260)
+	at com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:86)
+	at com.sctech.hj212distribute.socket.StringClient.startClient(StringClient.java:47)
+	at com.sctech.hj212distribute.Hj212DistributeApplication.main(Hj212DistributeApplication.java:17)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.doConnect(EnhanceAsynchronousClientChannel.java:70)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.connect(EnhanceAsynchronousClientChannel.java:52)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:166)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:217)
+	... 4 more
+[INFO ] 2025-02-21 17:26:46,010(100008) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 9 秒后重新连接  
+[INFO ] 2025-02-21 17:28:26,013(200011) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 8 秒后重新连接  
+[INFO ] 2025-02-21 17:30:06,012(300010) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 7 秒后重新连接  
+[INFO ] 2025-02-21 17:31:46,011(400009) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 6 秒后重新连接  
+[INFO ] 2025-02-21 17:33:26,017(500015) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 5 秒后重新连接  
+[INFO ] 2025-02-21 17:35:06,021(600019) --> [pool-1-thread-1] com.sctech.hj212distribute.socket.StringClient.lambda$startClient$0(StringClient.java:73): 服务器 4 秒后重新连接  
+[ERROR] 2025-02-21 17:36:26,260(1) --> [main] com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:48): 连接服务器失败  
+java.io.IOException: java.net.ConnectException: Connection refused: connect
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:237)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:260)
+	at com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:40)
+	at com.sctech.hj212distribute.socket.StringClient.startClient(StringClient.java:31)
+	at com.sctech.hj212distribute.Hj212DistributeApplication.main(Hj212DistributeApplication.java:17)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.doConnect(EnhanceAsynchronousClientChannel.java:70)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.connect(EnhanceAsynchronousClientChannel.java:52)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:166)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:217)
+	... 4 more
+[INFO ] 2025-02-21 17:36:38,317(12058) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 9 秒后重新连接  
+[INFO ] 2025-02-21 17:36:49,448(23189) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 8 秒后重新连接  
+[INFO ] 2025-02-21 17:37:00,604(34345) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 7 秒后重新连接  
+[INFO ] 2025-02-21 17:37:11,711(45452) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 6 秒后重新连接  
+[INFO ] 2025-02-21 17:37:22,879(56620) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 5 秒后重新连接  
+[INFO ] 2025-02-21 17:37:34,039(67780) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 4 秒后重新连接  
+[INFO ] 2025-02-21 17:37:45,182(78923) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 3 秒后重新连接  
+[INFO ] 2025-02-21 17:37:56,327(90068) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 2 秒后重新连接  
+[INFO ] 2025-02-21 17:38:07,478(101219) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 1 秒后重新连接  
+[INFO ] 2025-02-21 17:38:18,625(112366) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 0 秒后重新连接  
+[ERROR] 2025-02-21 17:43:37,141(1) --> [main] com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:48): 连接服务器失败  
+java.io.IOException: java.net.ConnectException: Connection refused: connect
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:237)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:260)
+	at com.sctech.hj212distribute.socket.StringClient.loadServer(StringClient.java:40)
+	at com.sctech.hj212distribute.socket.StringClient.startClient(StringClient.java:31)
+	at com.sctech.hj212distribute.Hj212DistributeApplication.main(Hj212DistributeApplication.java:17)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:586)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:853)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.doConnect(EnhanceAsynchronousClientChannel.java:70)
+	at org.smartboot.socket.enhance.EnhanceAsynchronousClientChannel.connect(EnhanceAsynchronousClientChannel.java:52)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:166)
+	at org.smartboot.socket.transport.AioQuickClient.start(AioQuickClient.java:217)
+	... 4 more
+[INFO ] 2025-02-21 17:43:49,164(12024) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 9 秒后重新连接  
+[INFO ] 2025-02-21 17:44:00,332(23192) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 8 秒后重新连接  
+[INFO ] 2025-02-21 17:44:11,500(34360) --> [Timer-0] com.sctech.hj212distribute.socket.StringClient$MessageProcessingTask.run(StringClient.java:65): 服务器 7 秒后重新连接  

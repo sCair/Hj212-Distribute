@@ -30,22 +30,22 @@ public class ProtocolMessageProcessor implements MessageProcessor<String> {
 
         //客户端断开连接
         if (StateMachineEnum.NEW_SESSION.equals(stateMachineEnum)) {
-            StringClient.isServerOk = true;
+            StringClient.isServerConnected = true;
             logger.info("服务器连接成功");
         }
         //客户端断开连接
         if (StateMachineEnum.INPUT_SHUTDOWN.equals(stateMachineEnum)) {
-            StringClient.isServerOk = false;
+            StringClient.isServerConnected = false;
             logger.info("读通道已被关闭，通会话正在关闭中。");
         }
         //客户端断开连接
         if (StateMachineEnum.SESSION_CLOSING.equals(stateMachineEnum)) {
-            StringClient.isServerOk = false;
+            StringClient.isServerConnected = false;
             logger.info("会话正在关闭中。");
         }
         //客户端断开连接
         if (StateMachineEnum.REJECT_ACCEPT.equals(stateMachineEnum)) {
-            StringClient.isServerOk = false;
+            StringClient.isServerConnected = false;
             logger.info("拒绝接受连接。");
         }
 
@@ -58,7 +58,7 @@ public class ProtocolMessageProcessor implements MessageProcessor<String> {
               //  TcpServer.recvDataHashMap.remove(str,session);
             //}
             logger.info("服务器断开");
-            StringClient.isServerOk = false;
+            StringClient.isServerConnected = false;
             StringClient.loadServer();
         }
     }
